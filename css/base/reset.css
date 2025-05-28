@@ -1,0 +1,54 @@
+/* base/reset.css */
+
+/* Обнуляем отступы и поля */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Удаляем оформление списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Удаляем подчеркивание у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стили у заголовков и задаём единый шрифт */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+/* Обнуляем стили кнопок */
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Убираем рамки у изображений */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Настройки для body */
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Наследуем шрифт и цвет для форм */
+input, textarea, select {
+  font: inherit;
+  color: inherit;
+}

@@ -1,0 +1,46 @@
+/* base/variables.css */
+
+:root {
+  /* Кольори */
+  --color-primary: #007BFF;
+  --color-primary-dark: #0056b3;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+
+  /* Фонові кольори */
+  --background-light: #ffffff;
+  --background-dark: #121212;
+
+  /* Тексти */
+  --text-color-primary: #212529;
+  --text-color-secondary: #6c757d;
+  --text-color-light: #ffffff;
+
+  /* Шрифти */
+  --font-family-base: "Changa One", sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 20px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Відступи */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+
+  /* Тіні */
+  --box-shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+  --box-shadow-md: 0 4px 6px rgba(0,0,0,0.15);
+
+  /* Інше */
+  --transition-speed: 0.3s;
+}
