@@ -2,8 +2,9 @@ header {
     color: #fff;
     text-align: center;
     padding: 59px 0 72px;
-    background: url(../../images/Header_dsk.jpg) 50% 50% no-repeat;
-    background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url(../../images/Header_dsk.jpg) 50% 50% no-repeat;
+  background-size: cover;
     background-position: center;
     height: 110vh;
 }
