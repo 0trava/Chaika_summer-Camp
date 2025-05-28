@@ -56,7 +56,20 @@ header .stuck_container + .brand {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    transition: 0.3s;
 }
+
+.sf-menu > li > a:hover, .sf-menu > li > a:focus {
+    color: #3e3e3e;
+    background: #fff;
+}
+
+.sf-menu > li.active > a {
+    color: #3e3e3e;
+    background: #fff;
+}
+
+
 .sf-menu a {
     display: block;
 }
@@ -76,6 +89,7 @@ a {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 10px;
+    font-family: 'Glyphicons Halflings', Courier, monospace;
 }
 
 .brand {
@@ -130,6 +144,7 @@ a {
 .list_banners li .icon_holder {
     position: relative;
     display: inline-block;
+    transition: 0.3s;
 }
 
 
@@ -145,6 +160,19 @@ a {
     display: inline-block;
  
 }
+
+.icon_holder:hover ~ .banner-cont,
+.icon_holder:focus ~ .banner-cont {
+  display: flex;
+}
+
+.banner-cont {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
 
 
 
@@ -170,4 +198,110 @@ a {
 
 .banner-cont {
     display: none;
+}
+
+/* MOBILE STYLE  MENU*/
+
+.stuck_container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: #FFF;
+    color: #000;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    z-index: 99999991;
+}
+
+
+/* Tablet media style */
+
+@media (max-width: 1199px) {
+    .brand_slogan {
+        letter-spacing: 1px;
+    }
+
+        .brand_name {
+        margin-top: 0;
+        font-size: 90px;
+        line-height: 90px;
+        letter-spacing: 0;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 979px) {
+        .sf-menu > li > a {
+        padding: 5px 15px;
+    }
+
+        h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .container .grid_4 {
+        width: 236px;
+    }
+}
+
+@media (max-width: 767px) {
+        header {
+        padding-top: 40px;
+        height: 150vh;
+    }
+
+
+
+    .brand_slogan {
+        letter-spacing: 0;
+    }
+
+        .brand_name {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .container, .container-fluid {
+    width: 100vw;}
+
+        .container [class*="grid_"], .container-fluid [class*="grid_"] {
+        float: none;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        align-content: center
+    }
+
+        .stuck_container {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .banner-cont {
+        display: flex;
+        width: 50vw;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 479px) {
+
+
+    .container, .container-fluid {
+        width: 300px;
+        padding: 0 15px;
+    }
 }
