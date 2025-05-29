@@ -1,0 +1,173 @@
+.programs_overview .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.programs_overview p {
+    color: #a3a2a2;
+    -webkit-text-size-adjust: none;
+    font-family: Roboto, sans-serif;
+}
+
+.programs_overview .cntr {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+    
+}
+
+.programs_overview .row {
+    margin-bottom: 45px;
+}
+
+.programs_overview .grid_6 {
+    height: 250px;
+    padding: 10px;
+}
+
+.grid_6 span {
+  margin-right: 10px;
+  border-bottom: 2px solid #000; /* або інший колір, товщина за потребою */
+  padding-bottom: 2px; /* необов’язково, щоб було трохи простору між текстом і лінією */
+}
+
+
+/*   PLAN SECTION*/
+
+.container .grid_4 {
+    width: 300px;
+}
+
+.container [class*="grid_"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+
+.plan_section .article-content {
+    position: relative;
+    text-align: center;
+    color: #737373;
+    padding: 34px 20px 31px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #242424;
+    border-bottom: 7px solid #242424;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.plan_section figure {
+    overflow: hidden;
+    position: relative;
+}
+
+.plan_section figure:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(36, 36, 36, 0.5);
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+
+
+.plan_section .article-content:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    margin-left: -11px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 11px 12px 11px;
+    border-color: transparent transparent #242424 transparent;
+}
+
+.plan_section figure figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: #fff;
+    text-align: center;
+    -moz-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    -o-transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+    transform: translateY(-35%);
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 300;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    font-family: Roboto, sans-serif;
+}
+
+.plan_section figure figcaption span {
+    font-weight: 400;
+    display: block;
+    font-size: 20px;
+}
+
+/* Buttons */
+
+.plan_section .btn3 {
+    color: #fff;
+}
+
+p + .btn3 {
+    margin-top: 21px;
+}
+
+.btn3 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    color: #242424;
+}
+
+
+/* HOVER */
+
+.plan_section article:hover .article-content {
+    background-color: #fff;
+    color: black;
+}
+
+.plan_section article:hover figure:before {
+    top: 240px;
+    opacity: 0;
+}
+
+.plan_section article:hover figcaption {
+    opacity: 0;
+    -moz-transform: translateY(90%);
+    -ms-transform: translateY(90%);
+    -o-transform: translateY(90%);
+    -webkit-transform: translateY(90%);
+    transform: translateY(90%);
+}
+
+.plan_section article:hover .btn3 {
+    color: #242424;
+}

@@ -30,7 +30,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem; /* приблизно 32px */
+  font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
 }
 
 h3 {
