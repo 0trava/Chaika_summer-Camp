@@ -1,0 +1,155 @@
+.container{
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.section2 {
+    color: white;
+    background-color: #242424;
+    display: flex;
+}
+
+
+
+.container .grid_6 {
+    width: 460px;
+}
+
+.container [class*="grid_"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+
+.section2 dl {
+    color: #fff;
+    padding-top: 30px;
+}
+
+.section2 dt {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.section2 dd {
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.section2 a[href^="tel:"]:hover {
+    color: #767676;
+}
+
+.section2 address {
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 41px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 50%;
+}
+
+.section2 .btn2 {
+    float: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn2 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    color: #242424;
+    background-color: #fff;
+    padding: 58px 0px;
+    text-transform: uppercase;
+}
+
+.btn2:hover {
+    color: #fff;
+    background: #c2c2c2;
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .container .grid_6 {
+        width: 364px;
+    }
+
+        h2, .section2 dd {
+        font-size: 30px;
+    }
+
+    .container .row {
+        margin-left: -20px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .container [class*="grid_"] {
+        float: left;
+        min-height: 1px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 979px) {
+    .section2 address {
+        padding-top: 15px;
+    }
+
+        .btn2 {
+        padding: 38px 20px;
+    }
+
+        h2, .section2 dd {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container, .container-fluid {
+        width: 420px;
+        padding: 0;
+    }
+
+        .container .row {
+        margin-left: 0;
+    }
+
+    .container [class*="grid_"] {
+        margin-left: 0;
+
+    }
+
+    .row + .row, [class*="grid_"] + [class*="grid_"] {
+        margin-top: 30px;
+    }
+
+    .header-top .container [class*="grid_"] {
+        align-items: flex-start;
+    }
+
+
+
+
+}
+
+
+
+@media (max-width: 479px) {
+    .container, .container-fluid {
+        width: 300px;
+        padding: 0 15px;
+    }
+}
+
