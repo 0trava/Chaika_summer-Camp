@@ -304,16 +304,19 @@ a {
     line-height: 100px;
   }
 
+
+
   .container, .container-fluid {
     width: 100vw;
+
   }
 
-  .container [class*="grid_"] {
+    .list_banners {
     float: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     margin-left: 0;
   }
 
@@ -328,7 +331,7 @@ a {
 
   .banner-cont {
     display: flex;
-    width: 50vw;
+    width: 100%;
     margin-bottom: 40px;
   }
 
