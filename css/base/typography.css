@@ -31,7 +31,7 @@ h1 {
 
 h2 {
   font-weight: 300;
-    font-family: "Roboto", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 60px;
     line-height: 1.2;
 }
@@ -49,5 +49,7 @@ h4 {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
+
+
 
 

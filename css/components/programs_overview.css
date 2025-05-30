@@ -8,7 +8,7 @@
 .programs_overview p {
     color: #a3a2a2;
     -webkit-text-size-adjust: none;
-    font-family: Roboto, sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 
 .programs_overview .cntr {
@@ -20,7 +20,7 @@
 }
 
 .programs_overview .row {
-    margin-bottom: 45px;
+    margin-bottom: 80px;
 }
 
 .programs_overview .grid_6 {
@@ -170,4 +170,42 @@ p + .btn3 {
 
 .plan_section article:hover .btn3 {
     color: #242424;
+}
+
+
+
+/* MEDIA STYLE */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .programs_overview p {
+        font-size: 14px;
+    }
+
+    .programs_overview .programs_section {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+}
+
+@media (max-width: 768px) {
+    .programs_overview p {
+        font-size: 14px;
+    }
+
+    .programs_overview .programs_section, .programs_overview  .plan_section{
+        display: flex;
+        flex-direction: column;
+}
+
+.programs_overview .grid_6 {
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.programs_overview .grid_4 {
+        margin-bottom: 40px;
+}
+
 }
