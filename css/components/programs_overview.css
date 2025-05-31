@@ -11,6 +11,7 @@
     font-family: Montserrat, sans-serif;
 }
 
+
 .programs_overview .cntr {
     margin-top: 100px;
     margin-bottom: 30px;
@@ -209,3 +210,16 @@ p + .btn3 {
 }
 
 }
+
+@media (max-width: 430px) {
+    .programs_overview .grid_6 {
+        width: 80vw;
+    }
+
+    .programs_overview .cntr {
+        width: 80vw;
+        font-size: 30px;
+
+    }
+}
+
