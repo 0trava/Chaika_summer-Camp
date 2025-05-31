@@ -150,7 +150,7 @@ p + .btn3 {
 
 /* HOVER */
 
-.plan_section article:hover .article-content {
+article:hover  .article-content {
     background-color: #fff;
     color: black;
 }
