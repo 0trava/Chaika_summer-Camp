@@ -1,3 +1,13 @@
+.programs_overview {
+    background-image: url(../../images/parallax1.jpg);
+    background-color: inherit;
+    background-size: cover;
+    padding-bottom: 800px;
+    /* height: 1993.3px;
+    transform: translate3d(0px, -270.81px, 0px); */
+}
+
+
 .programs_overview .container {
     display: flex;
     flex-direction: column;
