@@ -10,7 +10,7 @@
 .footer .container {
     border: 1px red solid;
 }
-
+/* 
 footer .brand {
     display: block;
 }
@@ -23,7 +23,7 @@ footer .brand_name {
     padding-bottom: 15px;
 }
 
-.brand_name {
+.footer .brand_name {
     overflow: hidden;
     font-family: "Changa One", sans-serif;
     font-size: 198px;
@@ -42,3 +42,8 @@ footer .brand_name {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
+
+.footer .brand_name span {
+    font-size: 14px;
+    line-height: 39px;
+} */
