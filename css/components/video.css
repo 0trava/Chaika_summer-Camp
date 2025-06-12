@@ -1,0 +1,33 @@
+.video {
+    padding-top: 45px;
+    padding-bottom: 80px;
+    height: 80vh;
+    color: #424242;
+    text-align: center;
+}
+
+.video .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+/* MOBILE ADAPTIVE */
+
+@media (max-width: 500px) {
+.video {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    color: #424242;
+    text-align: center;
+}
+
+.video .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+}
