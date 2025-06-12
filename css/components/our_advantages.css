@@ -65,24 +65,6 @@
 /* MOBILE ADAPTIVE */
 
 @media (max-width: 900px) {
-    .section3 .container {
-        width: 100vw;
-    }
-    .section3, .grid_list {
-        width: 90vw;
-        padding: 0 15px;
-    }
-
-    .section3 .row {
-        width: 80vw;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-}
-
-@media (max-width: 900px) {
     .section3 {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -99,6 +81,12 @@
         width: 80vw;
         padding: 0 15px;
         margin: 0;
+    }
+
+        .section3 .row {
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
