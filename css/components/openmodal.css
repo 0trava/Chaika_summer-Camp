@@ -1,0 +1,78 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  font-family: 'Gardens';
+}
+
+.modal-content {
+  background: white;
+  width: 80vw;
+  /* height: 80vh; */
+  padding: 20px;
+  position: relative;
+  overflow: auto;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*  STYLE */
+
+.modal h2 {
+    font-size: calc(28px + 6 * ((100vw - 320px) / (1600 - 320)));
+line-height: 45px;
+margin-bottom: 40px;
+}
+
+.modal p  {
+    font-size: calc(25px + 6 * ((100vw - 320px) / (1600 - 320)));
+    text-align: center;
+    font-family: 'Gardens';
+    font-weight: 400;
+    color: #000;
+}
+
+.modal li {
+    font-size: calc(20px + 6 * ((100vw - 320px) / (1600 - 320)));
+    text-align: start;
+    font-family: 'Gardens';
+    font-weight: 400;
+    color: #000;
+}
+.modal-contacts {
+    margin-top: 40px;
+}
+
+

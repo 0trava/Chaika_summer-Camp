@@ -67,7 +67,7 @@
 }
 
 .social_link img {
-    transition: border 0.3s ease, border-radius 0.3s ease; /* Добавлен transition */
+    transition: all 0.1s ease/* Добавлен transition */
 }
 
 .social_link img:hover, .social_link img:focus {
