@@ -78,6 +78,28 @@ a {
   transition: 0.3s;
 }
 
+
+/*  При скролі фіксація */
+
+.stuck_container {
+  transition: all 0.3s ease;
+}
+
+.stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  background-color: black;
+  z-index: 9999;
+  height: 50px;
+  padding-top: 5px;
+}
+
+body.with-stuck-header {
+  padding-top: 100px;
+}
+
 /* ------------------------------
   Логотип / Brand
 ------------------------------ */
