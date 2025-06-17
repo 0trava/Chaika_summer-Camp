@@ -11,6 +11,10 @@ header {
   height: 110vh;
 }
 
+.page-header {
+  height: 50vh;
+}
+
 header .stuck_container + .brand {
   margin-top: 50px;
 }
@@ -51,7 +55,7 @@ header .stuck_container + .brand {
 }
 
 .sf-menu > li + li {
-  margin-left: 28px;
+  margin-left: 20px;
 }
 
 .sf-menu > li > a {
@@ -90,7 +94,7 @@ a {
   top: 0;
   left: 0;
   width: 100% !important;
-  background-color: black;
+  background-color: rgb(68, 68, 68);
   z-index: 9999;
   height: 50px;
   padding-top: 5px;
