@@ -15,3 +15,24 @@
 .contact-map h2 {
     margin-bottom: 40px;
 }
+
+
+.responsive-map {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+  .responsive-map {
+    height: 300px;
+  }
+}
+
+/* Дуже малі екрани */
+@media (max-width: 480px) {
+  .responsive-map {
+    height: 250px;
+  }
+}
