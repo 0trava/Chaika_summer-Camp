@@ -58,14 +58,14 @@
     padding: 20px;
   }
 
-  .about__item .about__point {
+  .about__item .about__point, .modal h2  {
     text-indent: 0px;
     font-size: 20px;
     line-height: 30px;
     margin-top: 40px;
 }
 
-  .about__item p {
+  .about__item p, .modal-content p {
     font-family: "Gardens";
     font-weight: 400;
     font-size: 18px;
@@ -79,5 +79,13 @@
   .responsive-map {
     height: 250px;
   }
+
+    .about__item p, .modal-content p, .modal-content li {
+    font-family: "Gardens";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2em;
+    color: #000;
+}
 }
 
