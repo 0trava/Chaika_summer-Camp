@@ -107,6 +107,65 @@
     background: #242424;
 }
 
+/* Well8 */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.well8 .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.parallax_section .index-list2 li:before {
+    content: counter(li, decimal-leading-zero);
+    counter-increment: li;
+    font-size: 36px;
+    font-weight: 500;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    background: #fff;
+    color: #242424;
+    text-align: center;
+}
+
+.index-list2 li {
+    position: relative;
+    padding-left: 98px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.parallax_section h2, .parallax_section h3, .parallax_section h4, .parallax_section h5, .parallax_section h6, .parallax_section p {
+    color: #fff;
+}
+
+.parallax_section .index-list2 li.grid_4:nth-child(n + 4) {
+    margin-top: 40px;
+}
+
+
+
+
+
 
 
 
