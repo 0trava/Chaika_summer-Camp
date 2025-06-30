@@ -67,8 +67,8 @@
 .section3 .container  .grid_4 {
     margin-left: 60px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .section3 h2, .services h3 {
@@ -127,40 +127,53 @@
     color: #fff;
 }
 
-.parallax_section .index-list2 li:before {
-    content: counter(li, decimal-leading-zero);
-    counter-increment: li;
-    font-size: 36px;
-    font-weight: 500;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 68px;
-    height: 68px;
-    line-height: 68px;
-    background: #fff;
-    color: #242424;
-    text-align: center;
+
+.parallax_section .index-list2 {
+  counter-reset: li-counter; /* Ініціалізуємо лічильник */
+  list-style: none; /* Прибираємо маркери */
+  padding-left: 0 !important;
 }
 
-.index-list2 li {
-    position: relative;
-    padding-left: 98px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+.parallax_section .index-list2 li {
+  position: relative;
+  list-style: none;
+  padding-left: 80px;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  counter-increment: li-counter; /* Збільшуємо лічильник тут */
 }
 
-.parallax_section h2, .parallax_section h3, .parallax_section h4, .parallax_section h5, .parallax_section h6, .parallax_section p {
-    color: #fff;
+.parallax_section .index-list2 li::before {
+  content: counter(li-counter, decimal-leading-zero);
+  font-size: 36px;
+  font-weight: 500;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  background: #fff;
+  color: #242424;
+  text-align: center;
+}
+
+.parallax_section h2,
+.parallax_section h3,
+.parallax_section h4,
+.parallax_section h5,
+.parallax_section h6,
+.parallax_section p {
+  color: #fff;
 }
 
 .parallax_section .index-list2 li.grid_4:nth-child(n + 4) {
-    margin-top: 40px;
+  margin-top: 40px;
 }
+
+
 
 
 
